@@ -18,3 +18,8 @@ wheels/
 
 # Vscode Setting
 .vscode
+
+# DBT stucture
+.user.yml
+profiles.yml
+logs
