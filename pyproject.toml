@@ -10,16 +10,20 @@ dependencies = [
     "dagster-webserver>=1.10.3",
     "dbt>=1.0.0.38.29",
     "dbt-postgres>=1.9.0",
+    "fastapi>=0.115.11",
     "grpcio>=1.70.0",
     "ipykernel>=6.29.5",
     "langchain>=0.3.20",
     "langchain-community>=0.3.19",
+    "langchain-core>=0.3.41",
     "langchain-google-community>=2.0.7",
     "langchain-ollama>=0.2.3",
     "langchain-postgres>=0.0.13",
     "langgraph>=0.3.5",
     "pip>=25.0.1",
+    "pyjwt>=2.10.1",
     "pyspark>=3.5.5",
+    "uvicorn>=0.34.0",
 ]
 
 [tool.dagster]
