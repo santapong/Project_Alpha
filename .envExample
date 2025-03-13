@@ -1,0 +1,68 @@
+# Python Path
+PYTHONPATH="directory/path"
+
+# Bind Spark IP
+SPARK_LOCAL_IP="127.0.0.1"
+
+# DBT config
+DBT_PROFILES_DIR="directory/path"
+DBT_PROJECT_DIR="directory/path"
+
+## LLM Config Zone ##
+# LLM Parameter
+TEMPERATURE="0.5"
+TOP_P="0.5"
+TOP_K="5"
+
+# LLM Model
+LLM_MODEL="typhoon-v2-70b-instruct"
+LLM_BASE_URL="https://api.opentyphoon.ai/v1"
+LLM_PROVIDER="openai"
+OPENAI_API_KEY="--api-key--"
+
+# Database & Vector Database
+LLM_CACHE="database-path"
+VECTORDB_CONNECTION="database-path"
+COLLECTION_NAME="my_docs"
+
+EMBEDDING_MODEL="bge-m3"
+
+USER_AGENT='myagent'
+
+## LLM Config Zone ##
+
+# Dagster Config. ## Metadata for Dagster.
+DAGSTER_POSTGRES_USERNAME="username"
+DAGSTER_POSTGRES_PASSWORD="password"
+DAGSTER_POSTGRES_HOST="localhost"
+DAGSTER_POSTGRES_NAME="postgres"
+DAGSTER_POSTGRES_POST="5432"
+
+# Neo4j Config ## Graph Database.
+NEO_USERNAME="username"
+NEO_PASSWORD="password"
+NEO_PORT="7474"
+NEO_HOST="localhost"
+
+# Google Search
+# Using GOOGLE API Name >> Project Alpha Search KEY
+GOOGLE_CSE_ID="CSE_ID"
+GOOGLE_API_KEY="google-api-key"
+
+# API for loing page.
+# Login Page
+ENABLE_LOGIN=FALSE
+OAUTH2_PROVIDER="google"
+CLIENT_ID="google_client_id"
+CLIENT_SECRET="google_client_secret"
+REDIRECT_URL="http://localhost:8000/login/auth/google"
+
+SECRET_KEY="openssl rand -base64 42"
+
+
+# Database for login. ## Main Database.
+DATABASE_HOST="localhost"
+DATABASE_NAME="postgres"
+DATABASE_PORT="5432"
+DATABASE_USERNAME="username"
+DATABASE_PASSWORD="password"
