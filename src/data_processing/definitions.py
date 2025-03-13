@@ -1,14 +1,18 @@
 import dagster as dg
+from dagster_pyspark import PySparkResource
 
+import src.data_processing.modules as modules
 
-@dg.asset
-def hello(context: dg.AssetExecutionContext):
-    context.log.info("Hello!")
+assets = dg.load_assets_from_modules(modules=[modules])
 
-
-@dg.asset(deps=[hello])
-def world(context: dg.AssetExecutionContext):
-    context.log.info("World!")
-
-
-defs = dg.Definitions(assets=[hello, world])
+defs = dg.Definitions(
+    assets=assets,
+    resources={
+        "pyspark": PySparkResource(
+            spark_config={
+                "spark.executor.memory":"2g",
+                "spark.jars": "jars/postgresql-42.7.5.jar"
+            }
+        )
+    }
+)
