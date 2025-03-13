@@ -1,1 +1,1 @@
-from src.api.router.login import router_login
+from src.api.router.login.auth import router_login
