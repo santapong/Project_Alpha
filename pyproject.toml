@@ -12,6 +12,7 @@ dependencies = [
     "dagster-webserver>=1.10.3",
     "dbt>=1.0.0.38.29",
     "dbt-postgres>=1.9.0",
+    "fastapi>=0.115.11",
     "grpcio>=1.70.0",
     "ipykernel>=6.29.5",
     "langchain>=0.3.20",
@@ -23,9 +24,12 @@ dependencies = [
     "pandas>=2.2.3",
     "pillow>=11.1.0",
     "pip>=25.0.1",
+    "psycopg2-binary>=2.9.10",
+    "pyjwt>=2.10.1",
     "pymupdf4llm>=0.0.17",
     "pyspark>=3.5.5",
     "pytesseract>=0.3.13",
+    "uvicorn>=0.34.0",
 ]
 
 [tool.dagster]
