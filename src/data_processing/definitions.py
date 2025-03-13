@@ -10,7 +10,8 @@ defs = dg.Definitions(
     resources={
         "pyspark": PySparkResource(
             spark_config={
-                "spark.executor.memory":"2g"
+                "spark.executor.memory":"2g",
+                "spark.jars": "jars/postgresql-42.7.5.jar"
             }
         )
     }

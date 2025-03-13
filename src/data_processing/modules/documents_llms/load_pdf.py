@@ -43,27 +43,33 @@ doc = fitz.open(pdf_path)
 #     print(f"Page {page_num + 1} OCR Output:\n{text}\n")
 
 
+group_name = "PDF_LLM"
+
 # Design to Loading PDF and Convert Them to Vector Database and Database.
 @dg.asset(
     name="PDF_Loader",
+    group_name=group_name
 )
 def pdf_loader():
     pass
 
 @dg.asset(
-    name="PDF_Extraction"
+    name="PDF_Extraction",
+    group_name=group_name
 )
 def pdf_extraction():
     pass
 
 @dg.asset(
-    name="PDF_Embedding"
+    name="PDF_Embedding",
+    group_name=group_name,
 )
 def pdf_embedding():
     pass
 
 @dg.asset(
-    name="PDF_Vector_database"
+    name="PDF_Vector_database",
+    group_name=group_name
 )
 def pdf_vector_database():
     pass
