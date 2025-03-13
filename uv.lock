@@ -2214,6 +2214,7 @@ name = "project-alpha"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "alembic" },
     { name = "authlib" },
     { name = "dagster" },
     { name = "dagster-dbt" },
@@ -2231,6 +2232,7 @@ dependencies = [
     { name = "langchain-postgres" },
     { name = "langgraph" },
     { name = "pip" },
+    { name = "psycopg2-binary" },
     { name = "pyjwt" },
     { name = "pyspark" },
     { name = "uvicorn" },
@@ -2238,6 +2240,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "alembic", specifier = ">=1.15.1" },
     { name = "authlib", specifier = ">=1.5.1" },
     { name = "dagster", specifier = ">=1.10.3" },
     { name = "dagster-dbt", specifier = ">=0.26.3" },
@@ -2255,6 +2258,7 @@ requires-dist = [
     { name = "langchain-postgres", specifier = ">=0.0.13" },
     { name = "langgraph", specifier = ">=0.3.5" },
     { name = "pip", specifier = ">=25.0.1" },
+    { name = "psycopg2-binary", specifier = ">=2.9.10" },
     { name = "pyjwt", specifier = ">=2.10.1" },
     { name = "pyspark", specifier = ">=3.5.5" },
     { name = "uvicorn", specifier = ">=0.34.0" },

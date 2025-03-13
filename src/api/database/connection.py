@@ -2,6 +2,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, Session
 from contextlib import contextmanager
 
+from src.api.database.schema import BASE
+
 DATABASE_URL = ""
 
 # TODO: Need Testing.
@@ -10,6 +12,15 @@ class DBconnection:
     def __init__(self):
         self.engine = create_engine(url=DATABASE_URL)
         self.session = sessionmaker(bind=self.engine)()
+        
+        # create table.
+        self.__create_table()
+        
+    def __create_table(self):
+        try:
+            BASE.metadata.create_all(bind=self.engine)
+        except Exception as e:
+            raise Exception(f"Cannot create table. got error {str(e)}")
         
     def get_session(self):
         return self.session
