@@ -23,3 +23,7 @@ wheels/
 .user.yml
 profiles.yml
 logs
+
+# Data source
+data/
+jars

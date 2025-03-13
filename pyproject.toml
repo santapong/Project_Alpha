@@ -7,6 +7,8 @@ requires-python = ">=3.10"
 dependencies = [
     "dagster>=1.10.3",
     "dagster-dbt>=0.26.3",
+    "dagster-postgres>=0.26.3",
+    "dagster-pyspark>=0.26.3",
     "dagster-webserver>=1.10.3",
     "dbt>=1.0.0.38.29",
     "dbt-postgres>=1.9.0",
@@ -18,8 +20,12 @@ dependencies = [
     "langchain-ollama>=0.2.3",
     "langchain-postgres>=0.0.13",
     "langgraph>=0.3.5",
+    "pandas>=2.2.3",
+    "pillow>=11.1.0",
     "pip>=25.0.1",
+    "pymupdf4llm>=0.0.17",
     "pyspark>=3.5.5",
+    "pytesseract>=0.3.13",
 ]
 
 [tool.dagster]
